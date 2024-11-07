@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8f58e3cfb5ea74694d876c7c51158a, type: 3}
+  m_Name: DataGame
+  m_EditorClassIdentifier: 
+  listLevels:
+  - name: Level_ 1
+    width: 5
+    height: 4
+    startPoint: {x: 0, y: 0}
+    endPoint: {x: 3, y: 2}
+    blockColors:
+    - name: White
+      color: 0
+      pos: {x: 2, y: 1}
+    obstaclesList: []
+    TeleportList: []
+    canNotGoes: []
+    condition: 0
+  - name: Level_ 2
+    width: 7
+    height: 4
+    startPoint: {x: 2, y: 2}
+    endPoint: {x: 5, y: 3}
+    blockColors:
+    - name: White
+      color: 0
+      pos: {x: 1, y: 3}
+    - name: Red
+      color: 3
+      pos: {x: 2, y: 0}
+    - name: Orange
+      color: 5
+      pos: {x: 3, y: 1}
+    obstaclesList: []
+    TeleportList: []
+    canNotGoes: []
+    condition: 0
+  - name: Level_ 3
+    width: 9
+    height: 5
+    startPoint: {x: 2, y: 1}
+    endPoint: {x: 8, y: 3}
+    blockColors:
+    - name: White
+      color: 0
+      pos: {x: 1, y: 2}
+    - name: Red
+      color: 3
+      pos: {x: 5, y: 3}
+    - name: Green
+      color: 1
+      pos: {x: 7, y: 3}
+    - name: Yellow
+      color: 4
+      pos: {x: 7, y: 0}
+    obstaclesList: []
+    TeleportList:
+    - name: Tele_ 1
+      startPos: {x: 2, y: 3}
+      endPos: {x: 7, y: 3}
+    - name: Tele_ 2
+      startPos: {x: 4, y: 1}
+      endPos: {x: 7, y: 0}
+    canNotGoes: []
+    condition: 0
+  - name: Level_ 4
+    width: 12
+    height: 6
+    startPoint: {x: 3, y: 2}
+    endPoint: {x: 0, y: 5}
+    blockColors:
+    - name: Green
+      color: 1
+      pos: {x: 1, y: 2}
+    - name: Yellow
+      color: 4
+      pos: {x: 11, y: 4}
+    - name: Orange
+      color: 5
+      pos: {x: 9, y: 5}
+    obstaclesList: []
+    TeleportList:
+    - name: Tele_ 1
+      startPos: {x: 1, y: 1}
+      endPos: {x: 0, y: 5}
+    - name: Tele_ 2
+      startPos: {x: 4, y: 5}
+      endPos: {x: 9, y: 5}
+    - name: Tele_ 3
+      startPos: {x: 7, y: 5}
+      endPos: {x: 0, y: 0}
+    - name: Tele_ 4
+      startPos: {x: 8, y: 2}
+      endPos: {x: 11, y: 4}
+    - name: Tele_ 5
+      startPos: {x: 11, y: 0}
+      endPos: {x: 4, y: 0}
+    canNotGoes:
+    - {x: 0, y: 1}
+    - {x: 0, y: 4}
+    - {x: 1, y: 3}
+    - {x: 2, y: 0}
+    - {x: 2, y: 3}
+    - {x: 2, y: 4}
+    - {x: 2, y: 5}
+    - {x: 5, y: 0}
+    - {x: 5, y: 1}
+    - {x: 5, y: 2}
+    - {x: 5, y: 3}
+    - {x: 5, y: 4}
+    - {x: 5, y: 5}
+    - {x: 10, y: 0}
+    - {x: 10, y: 1}
+    - {x: 10, y: 2}
+    - {x: 10, y: 3}
+    - {x: 10, y: 4}
+    - {x: 10, y: 5}
+    condition: 0
+  - name: Level_ 5
+    width: 14
+    height: 7
+    startPoint: {x: 5, y: 6}
+    endPoint: {x: 9, y: 1}
+    blockColors:
+    - name: Yellow
+      color: 4
+      pos: {x: 0, y: 6}
+    - name: Blue
+      color: 2
+      pos: {x: 1, y: 0}
+    - name: Orange
+      color: 5
+      pos: {x: 9, y: 5}
+    - name: Green
+      color: 1
+      pos: {x: 13, y: 6}
+    - name: Red
+      color: 3
+      pos: {x: 4, y: 2}
+    - name: White
+      color: 0
+      pos: {x: 0, y: 1}
+    obstaclesList: []
+    TeleportList:
+    - name: Tele_ 1
+      startPos: {x: 0, y: 0}
+      endPos: {x: 0, y: 6}
+    - name: Tele_ 2
+      startPos: {x: 0, y: 5}
+      endPos: {x: 13, y: 6}
+    - name: Tele_ 3
+      startPos: {x: 13, y: 5}
+      endPos: {x: 9, y: 1}
+    - name: Tele_ 4
+      startPos: {x: 13, y: 0}
+      endPos: {x: 4, y: 2}
+    - name: Tele_ 5
+      startPos: {x: 8, y: 2}
+      endPos: {x: 7, y: 0}
+    canNotGoes:
+    - {x: 0, y: 4}
+    - {x: 1, y: 5}
+    - {x: 1, y: 6}
+    - {x: 6, y: 0}
+    - {x: 6, y: 1}
+    - {x: 6, y: 2}
+    - {x: 6, y: 3}
+    - {x: 6, y: 4}
+    - {x: 6, y: 5}
+    - {x: 6, y: 6}
+    - {x: 7, y: 1}
+    - {x: 8, y: 0}
+    - {x: 12, y: 5}
+    - {x: 12, y: 6}
+    - {x: 13, y: 4}
+    condition: 1
+  - name: Level_ 6
+    width: 18
+    height: 9
+    startPoint: {x: 8, y: 4}
+    endPoint: {x: 8, y: 8}
+    blockColors:
+    - name: White
+      color: 0
+      pos: {x: 1, y: 0}
+    - name: Orange
+      color: 5
+      pos: {x: 0, y: 3}
+    - name: Yellow
+      color: 4
+      pos: {x: 16, y: 0}
+    - name: Green
+      color: 1
+      pos: {x: 17, y: 3}
+    - name: Blue
+      color: 2
+      pos: {x: 15, y: 4}
+    - name: Yellow
+      color: 4
+      pos: {x: 2, y: 4}
+    - name: Red
+      color: 3
+      pos: {x: 16, y: 8}
+    - name: Blue
+      color: 2
+      pos: {x: 1, y: 8}
+    obstaclesList: []
+    TeleportList:
+    - name: Tele_ 1
+      startPos: {x: 0, y: 1}
+      endPos: {x: 3, y: 2}
+    - name: Tele_ 2
+      startPos: {x: 0, y: 5}
+      endPos: {x: 0, y: 8}
+    - name: Tele_ 3
+      startPos: {x: 0, y: 7}
+      endPos: {x: 2, y: 6}
+    - name: Tele_ 4
+      startPos: {x: 4, y: 7}
+      endPos: {x: 3, y: 8}
+    - name: Tele_ 5
+      startPos: {x: 8, y: 1}
+      endPos: {x: 3, y: 0}
+    - name: Tele_ 6
+      startPos: {x: 9, y: 1}
+      endPos: {x: 14, y: 0}
+    - name: Tele_ 7
+      startPos: {x: 12, y: 7}
+      endPos: {x: 16, y: 8}
+    - name: Tele_ 8
+      startPos: {x: 17, y: 1}
+      endPos: {x: 12, y: 1}
+    - name: Tele_ 9
+      startPos: {x: 17, y: 5}
+      endPos: {x: 8, y: 8}
+    - name: Tele_ 10
+      startPos: {x: 17, y: 7}
+      endPos: {x: 15, y: 6}
+    - name: Tele_ 11
+      startPos: {x: 7, y: 0}
+      endPos: {x: 5, y: 4}
+    - name: Tele_ 12
+      startPos: {x: 10, y: 0}
+      endPos: {x: 11, y: 5}
+    canNotGoes:
+    - {x: 0, y: 4}
+    - {x: 1, y: 3}
+    - {x: 1, y: 7}
+    - {x: 2, y: 2}
+    - {x: 2, y: 8}
+    - {x: 3, y: 1}
+    - {x: 3, y: 4}
+    - {x: 3, y: 5}
+    - {x: 3, y: 6}
+    - {x: 3, y: 7}
+    - {x: 4, y: 0}
+    - {x: 4, y: 3}
+    - {x: 4, y: 8}
+    - {x: 5, y: 2}
+    - {x: 5, y: 8}
+    - {x: 6, y: 1}
+    - {x: 6, y: 8}
+    - {x: 7, y: 1}
+    - {x: 7, y: 8}
+    - {x: 8, y: 0}
+    - {x: 8, y: 7}
+    - {x: 9, y: 0}
+    - {x: 9, y: 7}
+    - {x: 10, y: 1}
+    - {x: 10, y: 8}
+    - {x: 11, y: 1}
+    - {x: 11, y: 8}
+    - {x: 12, y: 2}
+    - {x: 12, y: 8}
+    - {x: 13, y: 0}
+    - {x: 13, y: 3}
+    - {x: 13, y: 8}
+    - {x: 14, y: 1}
+    - {x: 14, y: 4}
+    - {x: 14, y: 5}
+    - {x: 14, y: 6}
+    - {x: 14, y: 7}
+    - {x: 15, y: 2}
+    - {x: 15, y: 8}
+    - {x: 16, y: 3}
+    - {x: 16, y: 7}
+    - {x: 17, y: 4}
+    condition: 1
+  prefab: {fileID: 234587933916610233, guid: a0d5521a014b55844bea9741a5649643, type: 3}
+  teleport: {fileID: 7817773189832951469, guid: f25af9d33f01f1642b872c701f0b9004, type: 3}
